@@ -1,5 +1,4 @@
 # DiD-JSIE
-DiD-JSIE
 
 ## JSIE関東支部チュートリアルセッション
 
