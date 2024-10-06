@@ -51,9 +51,5 @@
 
 <!--  重力方程式を用いた時差あり差の差推定 -->
 
-### 関連資料
 
-- 田中 鮎夢（2016）「[重力方程式の基本](https://researchmap.jp/ayumu-tanaka/misc/14570985)」『世界経済評論』
-- 田中 鮎夢（2023）「【コメント】国際貿易分野におけるDID分析や重力方程式の現状と今後について」大塚啓二郎・黒崎卓・澤田康幸・園部哲史編著『[次世代の実証経済学](https://www.nippyo.co.jp/shop/book/9082.html)』
-- Silva, J. S., & Tenreyro, S. (2006) "log of gravity" [田中講義スライド](https://researchmap.jp/multidatabases/multidatabase_contents/detail/251549/a24e2bd8834e0d58884b12e2633de530?frame_id=502471)
 
