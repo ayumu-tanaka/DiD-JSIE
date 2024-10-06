@@ -39,11 +39,11 @@
 
 ## 資料
 
-### スライド
+### スライド（75分）
 
 - [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)
 
-### R資料
+### R資料（75分）
 
 1. [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
 
