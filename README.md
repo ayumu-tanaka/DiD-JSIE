@@ -39,11 +39,20 @@
 
 ## 資料
 
-1. [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)
+### スライド
+
+- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)
+
+### R資料
 
 1. [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
 
 1. [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
 
 1. 重力方程式を用いた時差あり差の差推定 
+
+## 関連資料
+
+- 田中 鮎夢（2016）「国際経済学における実証研究(第2回)国際貿易と重力の意外な関係 : 重力方程式の基本」『世界経済評論』<https://researchmap.jp/ayumu-tanaka/misc/14570985>
+- 田中 鮎夢（2023）「【コメント】国際貿易分野におけるDID分析や重力方程式の現状と今後について」大塚啓二郎・黒崎卓・澤田康幸・園部哲史編著『次世代の実証経済学』<https://www.nippyo.co.jp/shop/book/9082.html>
 
