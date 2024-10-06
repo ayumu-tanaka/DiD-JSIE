@@ -43,7 +43,7 @@
 
 - [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)
 
-### Rコード紹介（75分）
+### Rコード（75分）
 
 - [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
 
