@@ -37,7 +37,7 @@
 
 
 
-## 資料
+## 資料（適宜更新）
 
 ### スライド（75分）
 
@@ -45,11 +45,11 @@
 
 ### R資料（75分）
 
-1. [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
+- [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
 
-1. [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
+- [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
 
-1. 重力方程式を用いた時差あり差の差推定 
+<!--  重力方程式を用いた時差あり差の差推定 -->
 
 ### 関連資料
 
