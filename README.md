@@ -45,5 +45,5 @@
 
 - [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
 
-- [重力方程式を用いた時差あり差の差推定] to be appeared soon.
+- [重力方程式を用いた時差あり差の差推定]() to be appeared soon.
 
