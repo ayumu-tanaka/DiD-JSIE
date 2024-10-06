@@ -39,11 +39,11 @@
 
 ## 資料
 
-- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)
+1. [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)
 
-- [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
+1. [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
 
-- [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
+1. [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
 
-- 重力方程式を用いた時差あり差の差推定 
+1. 重力方程式を用いた時差あり差の差推定 
 
