@@ -45,6 +45,8 @@
 
 ### Rコード（75分）
 
+- 最低賃金の若年雇用への影響
+
 - [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe)
 
 - [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es)
