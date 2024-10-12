@@ -41,7 +41,7 @@
 
 ### スライド（75分）
 
-- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short) [PDF](DiDの展開.pdf)
+- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short)  ([PDF](DiDの展開.pdf))
 
 ### Rコード（75分）
 
