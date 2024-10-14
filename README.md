@@ -29,7 +29,7 @@
 
 
 近年、DiD（difference-in-differences）の研究が様々な側面で急速に進んでいる。
-特に、処置時期の不均一性に対処するために、異質性に頑健なDiD推定量（heterogeneity-robust difference-in-differences estimators）が開発された。
+特に、処置時期の不均一性に対処するために、異質性に頑健なDiD推定量（heterogeneity-robust DiD estimators）が開発された。
 本講義では、こうしたDiDの近年の展開を展望し、実証への応用のあり方について議論するよう試みる。
 国際経済学のトピック（例：重力方程式）にも触れる。
 時間の制約があるため、膨大な研究のごくわずかにしか、またごく表層的にしか触れることはできない。
