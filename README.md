@@ -33,7 +33,7 @@
 本講義では、こうしたDiDの近年の展開を展望し、実証への応用のあり方について議論するよう試みる。
 時間の制約があるため、膨大な研究のごくわずかにしか、またごく表層的にしか触れることはできない。
 大学院レベルの因果推論の知識とRプログラミングの技能を前提とする。コード紹介では、Rを主として用いる。
-資料・詳細はGitHub（https://github.com/ayumu-tanaka/DiD-JSIE）に掲載。
+資料・詳細はGitHub（[https://github.com/ayumu-tanaka/DiD-JSIE](https://github.com/ayumu-tanaka/DiD-JSIE)）に掲載。
 
 
 
