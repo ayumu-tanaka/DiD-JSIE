@@ -34,9 +34,7 @@
 計量経済学やRプログラミングの基本的な知識については前提として、DiDの実践的な内容に絞ってお話しする。
 国際経済学のトピック（例：重力方程式）にも触れる。
 時間の制約があるため、膨大な研究のごくわずかにしか、またごく表層的にしか触れることはできない。
-コード紹介では、Rを主として用いる。
-
-資料・詳細はGitHub（[https://github.com/ayumu-tanaka/DiD-JSIE](https://github.com/ayumu-tanaka/DiD-JSIE)）に掲載。
+コード紹介では、Rを主として用いる。資料・詳細はGitHub（[https://github.com/ayumu-tanaka/DiD-JSIE](https://github.com/ayumu-tanaka/DiD-JSIE)）に掲載。
 
 
 
