@@ -30,7 +30,7 @@
 
 近年、DiD（difference-in-differences）の研究が様々な側面で急速に進んでいる。
 特に、処置時期の不均一性に対処するために、異質性に頑健なDiD推定量（heterogeneity-robust DiD estimators）が開発された。
-本講義では、こうしたDiDの近年の展開を展望し、計量経済学やRプログラミングの基本的な知識については前提として、DiDの実践的な内容に絞ってお話しする。
+本講義では、こうしたDiDの近年の展開を展望し、計量経済学やRプログラミングの基本的な知識は前提として、DiDの実践的な内容に絞ってお話しする。
 国際経済学のトピック（例：重力方程式）にも触れる。
 時間の制約があるため、膨大な研究のごくわずかにしか、またごく表層的にしか触れることはできない。
 コード紹介では、Rを主として用いる。資料・詳細はGitHub（[https://github.com/ayumu-tanaka/DiD-JSIE](https://github.com/ayumu-tanaka/DiD-JSIE)）に掲載。
