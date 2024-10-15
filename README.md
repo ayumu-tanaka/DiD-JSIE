@@ -33,7 +33,8 @@
 本講義では、こうしたDiDの近年の展開を展望し、計量経済学やRプログラミングの基本的な知識は前提として、初学者向けにDiDの実践的な内容に絞ってお話しする。
 国際経済学のトピック（例：重力方程式）にも触れる。
 時間の制約があるため、膨大な研究のごくわずかにしか、またごく表層的にしか触れることはできない。
-コード紹介では、Rを主として用いる。資料・詳細はGitHub（[https://github.com/ayumu-tanaka/DiD-JSIE](https://github.com/ayumu-tanaka/DiD-JSIE)）に掲載。
+コード紹介では、Rを主として用いる。Posit Cloud / RStudio を推奨。
+資料・詳細はGitHub（[https://github.com/ayumu-tanaka/DiD-JSIE](https://github.com/ayumu-tanaka/DiD-JSIE)）に掲載。
 
 
 ## 資料
