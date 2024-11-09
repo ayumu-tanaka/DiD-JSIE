@@ -57,5 +57,5 @@
 
 <!--  重力方程式を用いた時差あり差の差推定 -->
 
-- 最低賃金の若年雇用への影響: [R版](https://rpubs.com/ayumuR/DiD-Wage) / [Stata版](https://rpubs.com/ayumuR/DiD-Stata-Wage)
+- 最低賃金の若年雇用への影響: [R版](https://rpubs.com/ayumuR/DiD-Wage) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Wage.html) / [Stata版](https://rpubs.com/ayumuR/DiD-Stata-Wage) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Stata-Wage.html) 
 
