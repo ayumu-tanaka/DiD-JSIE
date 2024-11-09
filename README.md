@@ -13,7 +13,8 @@
 
 - 会場：日本大学経済学部（水道橋）ハイブリッド方式で開催
 - 言語：日本語
-- [関東支部](https://www.jsie.jp/kanto/news/915/)
+
+> [関東支部](https://www.jsie.jp/kanto/news/915/)
 
    
 ## 講義概要
