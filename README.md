@@ -42,7 +42,7 @@
 
 ### スライド（75分）
 
-- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short): [HTML](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.html) / [PDF](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.pdf)
+- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.html) / [[PDF]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.pdf)
 
 <!--
   - [Pedro Sant'Anna氏による解説動画](https://youtu.be/Jyat3OZLyRc?si=RXkz6Ma0POrOeu6w)
@@ -51,9 +51,9 @@
 ### Rコード（75分）
 
 
-- [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe): [HTML](https://ayumu-tanaka.github.io/DiD-JSIE/05_gravity_fixest_twfe.html)
+- [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/05_gravity_fixest_twfe.html)
 
-- [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es): [HTML](https://ayumu-tanaka.github.io/DiD-JSIE/06_gravity_fixest_es.html)
+- [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/06_gravity_fixest_es.html)
 
 <!--  重力方程式を用いた時差あり差の差推定 -->
 
