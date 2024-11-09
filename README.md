@@ -42,7 +42,7 @@
 
 ### スライド（75分）
 
-- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short): [HTML](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.html) / [PDF](DiD_notes02_Roth2023survey_short.pdf)
+- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short): [HTML](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.html) / [PDF](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.pdf)
 
 <!--
   - [Pedro Sant'Anna氏による解説動画](https://youtu.be/Jyat3OZLyRc?si=RXkz6Ma0POrOeu6w)
