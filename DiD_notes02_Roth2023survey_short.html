@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="DiD_notes02_Roth2023survey_short_files/libs/clipboard/clipboard.min.js"></script>
+<script src="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/tabby.min.js"></script>
+<script src="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/popper.min.js"></script>
+<script src="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="DiD_notes02_Roth2023survey_short_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.54">
+
+  <meta name="author" content="資料作成：田中 鮎夢">
+  <meta name="dcterms.date" content="2024-11-16">
+  <title>DiDの展開</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">DiDの展開</h1>
+  <p class="subtitle"><span class="citation" data-cites="roth2023s">Roth et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span> What’s trending in difference-in-differences?</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+資料作成：田中 鮎夢 
+</div>
+        <p class="quarto-title-affiliation">
+            青山学院大学
+          </p>
+    </div>
+</div>
+
+  <p class="date">2024-11-16</p>
+</section>
+<section id="日本国際経済学会関東支部" class="slide level2">
+<h2>日本国際経済学会関東支部</h2>
+<h3 id="チュートリアルセッション20241116">チュートリアルセッション（2024/11/16）</h3>
+<p><strong>謝辞</strong></p>
+<ul>
+<li>本セッションの開催にあたり、戸堂康之先生からのご指導、ご助言を賜りましたことを感謝いたします。</li>
+<li>蓬田守弘先生、溝口佳宏先生はじめ関東支部の先生方、御支援ありがとうございます。</li>
+</ul>
+<p><strong>経緯</strong></p>
+<ul>
+<li>大塚他編著<a href="https://www.nippyo.co.jp/shop/book/9082.html">『次世代の実証経済学』</a>（日本評論社、2023）
+<ul>
+<li>ワークショップ（2022/10/1, 2）、出版（2023/6/30）</li>
+<li>戸堂先生「第6章 国際貿易論における実証分析の現状と課題」</li>
+<li>田中「【コメント】国際貿易分野におけるDID分析や重力方程式の現状と今後について」</li>
+</ul></li>
+<li>戸堂先生と本セッションの打ち合わせ（2024/6/1, 8/20）</li>
+</ul>
+</section>
+<section id="はじめに" class="slide level2">
+<h2>1. はじめに</h2>
+<ul>
+<li><p>本資料は、<span class="citation" data-cites="roth2023s">Roth et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span> とそのワーキング・ペーパー・バージョンに従って、DiDの基本的な概念を説明し、最近の研究の展開について議論する。</p>
+<ul>
+<li>Roth, Jonathan, Pedro HC Sant’Anna, Alyssa Bilinski, and John Poe. 2023. “What’s Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature.” Journal of Econometrics 235 (2): 2218–44. <a href="https://doi.org/10.1016/j.jeconom.2023.03.008" class="uri">https://doi.org/10.1016/j.jeconom.2023.03.008</a>.</li>
+</ul></li>
+<li><p>論文の中でも、基礎的かつ重要な要点に絞る。（従って、原論文を適宜参照のこと）</p>
+<ul>
+<li><p>推定（estimation）に重点を置き、証明はすべて省く。</p></li>
+<li><p>共変量なしの基礎ケースに重点を置き、共変量ありの応用ケースは簡潔な紹介にとどめる。</p></li>
+<li><p>数値例を追加。</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="基本的なモデル" class="slide level2">
+<h2>2. 基本的なモデル</h2>
+<h3 id="処置の割り当てと時期">2.1. 処置の割り当てと時期</h3>
+<ul>
+<li>2つの期間（<span class="math inline">\(t=1, 2\)</span>）が存在するモデルを考える。</li>
+<li>個体は、<span class="math inline">\(i\)</span>でインデックスされ、次の2つの母集団のうちの1つから引き出される。
+<ul>
+<li>処置群の母集団 (<span class="math inline">\(D_{i}=1\)</span>) の個体は、期間<span class="math inline">\(t=1\)</span>と<span class="math inline">\(t=2\)</span>の間に処置を受ける。</li>
+<li>未処置群（比較群、対照群、対照群）の母集団 (<span class="math inline">\(D_{i}=0\)</span>) の個体は、両期間とも未処置のままである。</li>
+</ul></li>
+</ul>
+<table class="caption-top">
+<caption>例）最低賃金引き上げが雇用に与える影響</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Before (t=1)</th>
+<th>After (t=2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NJ, 処置群 (D=1)</td>
+<td>No</td>
+<td>処置</td>
+</tr>
+<tr class="even">
+<td>PA, 比較群 (D=0)</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="結果と処置状態" class="slide level2">
+<h2>結果と処置状態</h2>
+<ul>
+<li>計量経済学者は、<span class="math inline">\(i=1,..., N\)</span>の個体、<span class="math inline">\(t=1, 2\)</span>の2期間のパネルについて、</li>
+<li>結果(outcome): <span class="math inline">\(Y_{it}\)</span> と</li>
+<li>処置状態: <span class="math inline">\(D_{i}\)</span></li>
+</ul>
+<p>を観察する。</p>
+<ul>
+<li>単純なバランスド・パネル・データのセットアップに焦点を当てる。
+<ul>
+<li>（反復横断データや非バランスド・パネルにDiDを拡張することは可能）</li>
+</ul></li>
+</ul>
+<table class="caption-top">
+<caption>例）最低賃金引き上げが雇用に与える影響</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Before (t=1)</th>
+<th>After (t=2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NJ, 処置群 (D=1)</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>PA, 比較群 (D=0)</td>
+<td>3</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="潜在的な結果の枠組み" class="slide level2">
+<h2>2.2. 潜在的な結果の枠組み</h2>
+<ul>
+<li>潜在的な結果（potential outcomes）の枠組み (Rubin 1974, Robins 1986)
+<ul>
+<li><span class="math inline">\(Y_{it}(0,0)\)</span>は、<span class="math inline">\(t\)</span>期において<span class="math inline">\(i\)</span>が両期とも未処置であった場合の<span class="math inline">\(i\)</span>の潜在的な結果。</li>
+<li><span class="math inline">\(Y_{it}(0, 1)\)</span> は、<span class="math inline">\(i\)</span> が最初の期間では未処置であるが、2番目の期間までに処置にさらされた場合の個体 <span class="math inline">\(i\)</span> の期間 <span class="math inline">\(t\)</span> の潜在的な結果。</li>
+</ul></li>
+<li>表記を簡単にするために、以下のように書く。
+<ul>
+<li><span class="math inline">\(Y_{it}(0)= Y_{it}(0,0)\)</span><br>
+</li>
+<li><span class="math inline">\(Y_{it}(1)= Y_{it}(0,1)\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="最低賃金の例" class="slide level2">
+<h2>最低賃金の例</h2>
+<table class="caption-top">
+<caption>例）最低賃金引き上げが雇用に与える影響</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Before (t=1)</th>
+<th>After (t=2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NJ, 処置群 (D=1)</td>
+<td><span class="math inline">\(Y_{i1}(1)=2\)</span></td>
+<td><span class="math inline">\(Y_{i2}(1)=4\)</span></td>
+</tr>
+<tr class="even">
+<td>PA, 比較群 (D=0)</td>
+<td><span class="math inline">\(Y_{i1}(0)=3\)</span></td>
+<td><span class="math inline">\(Y_{i2}(0)=2\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>注：この例では簡単化のため、各群内の個体間でアウトカムに異質性がなく、期待値オペレータを省略できるとする。以下同様。</li>
+</ul>
+</section>
+<section id="因果推論の基本的な問題" class="slide level2">
+<h2>因果推論の基本的な問題</h2>
+<ul>
+<li>因果推論の基本的な問題（Holland, 1986）のために 、我々は各個体<span class="math inline">\(i\)</span>について2つの潜在的結果のうちの1つだけを観測。</li>
+<li>すなわち、観測された結果は、</li>
+</ul>
+<p><span class="math display">\[
+Y_{it}=
+\underbrace{D_{i}Y_{it}(1)}_{処置群}
++
+\underbrace{(1-D_{i})Y_{it}(0)}_{比較群}
+\]</span></p>
+<p>によって与えられる。</p>
+<ul>
+<li>この潜在的結果の枠組みは、個体<span class="math inline">\(i\)</span>の結果（outcome）が個体<span class="math inline">\(j \neq i\)</span> の処置状況に依存しないという<strong>安定個体処置値仮定</strong>（<strong>SUTVA</strong>: stable unit treatment value assumption）を暗黙的に内包しており、<strong>スピルオーバー効果</strong>を排除している。</li>
+</ul>
+</section>
+<section id="att-処置群への平均処置効果" class="slide level2">
+<h2>ATT (処置群への平均処置効果）</h2>
+<ul>
+<li>正統的なDiDの設定において最も注目される因果推定対象（causal estimand）は、期間<span class="math inline">\(t=2\)</span>における<strong>処置群への平均処置効果</strong>（<strong>ATT</strong>: average treatment effect on the treated）である。</li>
+</ul>
+<p><span class="math display">\[
+\tau _{2} = \mathbb{E} [ Y_{i2}(1) - \color{purple}{Y_{i2}(0)} | \underbrace{D_{i} = 1}_{\text{処置群}}]
+\]</span></p>
+<ul>
+<li>これは、処置された個体に対する、処置された期間（<span class="math inline">\(t=2\)</span>）における平均的な因果効果を測定したものである。</li>
+<li>２番目の項、<span class="math inline">\(\color{purple}{Y_{i2}(0)}\)</span>は、<strong>反実仮想</strong>。つまり、処置が行われなかった場合の処置群の平均結果を示す。</li>
+</ul>
+</section>
+<section id="平行傾向の仮定と識別" class="slide level2">
+<h2>2.3. 平行傾向の仮定と識別</h2>
+<ul>
+<li><p><span class="math inline">\(\tau _{2}\)</span>を識別する際の課題は、未処置の潜在的な結果（outcome）である<span class="math inline">\(Y_{i2}(0)\)</span>が、処置群（<span class="math inline">\(D_{i}=1\)</span>）では観測されないことである。</p></li>
+<li><p>DiD法は、(1)未処置群の結果の変化と(2)処置群のベースラインの結果を用いて、処置群の平均的な反事実の未処置結果を推定する仮定によって、この識別問題を克服している。</p></li>
+</ul>
+</section>
+<section id="仮定1平行傾向の仮定" class="slide level2">
+<h2>仮定1「平行傾向の仮定」</h2>
+<ul>
+<li><p><span class="math inline">\(\tau_{2}\)</span>を識別するための重要な仮定は、<strong>平行傾向の仮定（parallel trends assumption）</strong>である。これは、処置が行われなかった場合、処置群と未処置群（比較群、対象群）の平均結果は平行に進展したであろうという直観的なものである。</p></li>
+<li><p><strong>仮定1（平行傾向 / Parallel Trends）</strong></p></li>
+</ul>
+<p><span class="math display">\[
+\underbrace{\mathbb{E}\left[\color{purple}{Y_{i 2}(0)}
+-\color{blue}{Y_{i 1}(0)} \mid \underbrace{D_{i}=1}_{\text{処置群}} \right]}_{\text{処置がなかった場合の変化（反実）}}
+=
+\underbrace{\color{red}{\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid \underbrace{D_{i}=0}_{\text{比較群}} \right]}}_{\text{処置がなかった場合の変化（現実）}}   \qquad (1)
+\]</span></p>
+</section>
+<section id="仮定２予見効果なしの仮定" class="slide level2">
+<h2>仮定２「予見効果なしの仮定」</h2>
+<ul>
+<li><p>また、<span class="math inline">\(\tau_{2}\)</span>の識別に必要なもう一つの重要で隠れた仮定は、<strong>予見効果なしの仮定（no anticipatory effects assumption、無予測の仮定: no-anticipation assumption)</strong> であり、これは、処置が実施される前には因果的効果がないとするものである。</p></li>
+<li><p>そうでなければ、第1期と第2期の処置群の結果<span class="math inline">\(Y\)</span>の変化は、<span class="math inline">\(t=2\)</span>期の因果的効果だけでなく、<span class="math inline">\(t=1\)</span>期の予見効果も反映している可能性があるからである（Abbring and van den Berg, 2003; Malani and Reif, 2015）。</p></li>
+<li><p><strong>仮定2（予見効果なし / No Anticipatory Effects）</strong></p></li>
+</ul>
+<p><span class="math display">\[
+Y_{i 1}(0)=Y_{i 1}(1) \text { for all } i \text { with } D_{i}=1
+\]</span></p>
+<ul>
+<li>意味：処置群（<span class="math inline">\(D_{i}=1\)</span>）にとって、処置があってもなくても、処置前の期間（<span class="math inline">\(t=1\)</span>）の結果（<span class="math inline">\(Y_{i 1}\)</span>）は同じはずである。</li>
+</ul>
+</section>
+<section id="attの識別1" class="slide level2">
+<h2>ATTの識別(1)</h2>
+<ul>
+<li>平行傾向と予見効果なしの仮定の下で、2期目のATT（<span class="math inline">\(\tau_{2}\)</span>）が識別される。</li>
+<li>平行傾向の仮定（再掲）</li>
+</ul>
+<p><span class="math display">\[
+\mathbb{E}\left[\color{purple}{Y_{i 2}(0)}
+-\color{blue}{Y_{i 1}(0)} \mid \underbrace{D_{i}=1}_{\text{処置群}} \right]
+=\color{red}{\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid \underbrace{D_{i}=0}_{\text{比較群}} \right]}
+\]</span></p>
+<ul>
+<li><strong>平行傾向の仮定</strong>（上の式）の項を並べ替えることで、次のようになる。</li>
+</ul>
+<p><span class="math display">\[
+\underbrace{\color{purple}{\mathbb{E}\left[Y_{i 2}(0) \mid D_{i}=1\right]}}_{\text{処置群の反実仮想の第２期の値}}
+=
+\underbrace{\color{blue}{\mathbb{E}\left[Y_{i 1}(0) \mid D_{i}=1\right]}}_{\text{処置群の反実仮想ベースライン}}
++
+\underbrace{\color{red}{\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid D_{i}=0\right]}}_{\text{比較群の変化の期待値}}
+\]</span></p>
+</section>
+<section id="attの識別2" class="slide level2">
+<h2>ATTの識別(2)</h2>
+<ul>
+<li>さらに、<strong>予見効果なしの仮定</strong>で、 <span class="math inline">\(\color{blue}{\mathbb{E}\left[Y_{i 1}(0) \mid D_{i}=1\right]} =\color{green}{\mathbb{E}\left[Y_{i 1}(1) \mid D_{i}=1\right]}\)</span>のため、以下のように変形できる。</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+\color{purple}{\mathbb{E}\left[Y_{i 2}(0) \mid D_{i}=1\right] }
+&amp; =\color{blue}{\mathbb{E}\left[Y_{i 1}(0) \mid D_{i}=1\right]}
++\color{red}{\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid D_{i}=0\right]} \\
+&amp; =\color{green}{\mathbb{E}\left[Y_{i 1}(1) \mid D_{i}=1\right]}
++\color{red}{\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid D_{i}=0\right]}
+\end{aligned}
+\]</span></p>
+</section>
+<section id="attの識別3" class="slide level2">
+<h2>ATTの識別(3)</h2>
+<ul>
+<li>処置群について<span class="math inline">\(Y(1)\)</span>を、比較群について<span class="math inline">\(Y(0)\)</span>を観測していることを利用するとさらに変形できる： <span class="math display">\[
+\begin{aligned}
+\underbrace{\color{purple}{\mathbb{E}\left[Y_{i 2}(0) \mid D_{i}=1\right] }}_{\color{purple}{\text{処置群の2期目の反実仮想的な平均結果}}}
+&amp; =\color{green}{\mathbb{E}\left[Y_{i 1}(1) \mid D_{i}=1\right]}
++\color{red}{\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid D_{i}=0\right]} \\
+&amp; =\underbrace{\color{green}{{\mathbb{E}\left[Y_{i 1} \mid D_{i}=1\right]}}}_{\color{green}{\text{処置群の処置前の平均}}}
++\underbrace{\color{red}{{\mathbb{E}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=0\right]}}}_{\color{red}{\text{比較群の結果の変化の平均}}}
+\end{aligned}
+\]</span></li>
+</ul>
+<!--
+
+-   この式は、以下の関係が成り立つことを示す。 $$
+    \color{purple}{\text{処置群の2期目の反実仮想的な平均結果}}=
+    \color{green}{\text{処置群の処置前の平均}}
+    +\color{red}{\text{比較群の結果の変化の平均}}
+    $$
+-->
+<ul>
+<li>よって、<span class="math inline">\(\color{purple}{\text{反実仮想値}}\)</span>を、<span class="math inline">\(\color{green}{\text{処置群の処置前の平均}}\)</span>と<span class="math inline">\(\color{red}{\text{比較群の結果の変化の平均}}\)</span>の和によって代替できる。</li>
+</ul>
+</section>
+<section id="attの識別4" class="slide level2">
+<h2>ATTの識別(4)</h2>
+<ul>
+<li>処置群の<span class="math inline">\(Y(1)\)</span>を直接観測していることに注意して、以下のように式変形できる。</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+\tau_{2}
+&amp; = \mathbb{E}\left[Y_{i 2}(1)-\color{purple}{Y_{i 2}(0)} \mid D_{i}=1\right] \\
+&amp; = \mathbb{E}\left[Y_{i 2}(1) \mid D_{i}=1\right]
+- \color{purple}{\mathbb{E}\left[Y_{i 2}(0) \mid D_{i}=1\right] }\\
+&amp; = \mathbb{E}\left[Y_{i 2}(1) \mid D_{i}=1\right]
+- \color{green}{{\mathbb{E}\left[Y_{i 1} \mid D_{i}=1\right]}}
+- \color{red}{{\mathbb{E}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=0\right]}} \\
+&amp; =\underbrace{\mathbb{E}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=1\right]}_{\text{処置群の変化}}
+-\underbrace{\color{red}{\mathbb{E}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=0\right]}}_{\text{比較群の変化}} \qquad (2)
+\end{aligned}
+\]</span></p>
+<ul>
+<li>これにより、ATT（<span class="math inline">\(\tau_{2}\)</span>）が識別できる。</li>
+</ul>
+</section>
+<section id="推定と推論-1-手計算" class="slide level2">
+<h2>2.4. 推定と推論 (1) 手計算</h2>
+<ul>
+<li><p>手計算によるATT推定</p></li>
+<li><p>期待値を標本平均値に置き換えることで、<span class="math inline">\(\tau_{2}\)</span>を推定できる。 <span class="math display">\[
+\widehat{\tau}_{2}=\left(\bar{Y}_{t=2, D=1}-\bar{Y}_{t=1, D=1}\right)-\left(\bar{Y}_{t=2, D=0}-\bar{Y}_{t=1, D=0}\right)
+\]</span></p></li>
+<li><p>ここで、<span class="math inline">\(\bar{Y}_{t=t^{\prime}, D=d}\)</span>は、期間<span class="math inline">\(t^{\prime}\)</span>の群<span class="math inline">\(d\)</span>の結果<span class="math inline">\(Y\)</span>の標本平均値。</p></li>
+</ul>
+</section>
+<section id="最低賃金の例-1" class="slide level2">
+<h2>最低賃金の例</h2>
+<ul>
+<li>観測された値からのATTの計算。</li>
+</ul>
+<table class="caption-top">
+<caption>例）最低賃金引き上げが雇用に与える影響</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>Before (t=1)</th>
+<th>After (t=2)</th>
+<th>差</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NJ, 処置群 (D=1)</td>
+<td><span class="math inline">\(Y_{i1}(1)=2\)</span></td>
+<td><span class="math inline">\(Y_{i2}(1)=4\)</span></td>
+<td>4-2=2</td>
+</tr>
+<tr class="even">
+<td>PA, 比較群 (D=0)</td>
+<td><span class="math inline">\(Y_{i1}(0)=3\)</span></td>
+<td><span class="math inline">\(Y_{i2}(0)=2\)</span></td>
+<td>2-3=-1</td>
+</tr>
+<tr class="odd">
+<td>差</td>
+<td>2-3=-1</td>
+<td>4-2=2</td>
+<td>ATT=2-(-1)=3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="最低賃金の例-2" class="slide level2">
+<h2>最低賃金の例</h2>
+<ul>
+<li>潜在的結果を明示したATTの計算。</li>
+</ul>
+<table class="caption-top" style="width:67%;">
+<caption>例）最低賃金引き上げが雇用に与える影響</caption>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Before (t=1)</th>
+<th>After (t=2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>現実, Y(1)</p>
+<p>NJ, 処置群 (D=1)</p></td>
+<td><span class="math inline">\(Y_{i1}(1)=2\)</span></td>
+<td><span class="math inline">\(Y_{i2}(1)=4\)</span></td>
+</tr>
+<tr class="even">
+<td><p>反実, Y(0)</p>
+<p>NJ, 処置群 (D=1)</p></td>
+<td><p>予 見 効果なしより</p>
+<p><span class="math inline">\(Y_{i1}(0)=2\)</span></p></td>
+<td><p>平行傾向より</p>
+<p><span class="math inline">\(Y_{i2}(0)=1\)</span></p></td>
+</tr>
+<tr class="odd">
+<td>ATT</td>
+<td></td>
+<td>=4-1=3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="最低賃金の例-3" class="slide level2">
+<h2>最低賃金の例</h2>
+
+<img data-src="DiD_notes02_Roth2023surveyData/MinWage.png" class="r-stretch"></section>
+<section id="推定と推論-2-twfe" class="slide level2">
+<h2>推定と推論 (2) TWFE</h2>
+<ul>
+<li>T<strong>wo-way fixed effects (TWFE)</strong> regression specification</li>
+<li><strong>二方向固定効果（TWFE）回帰式</strong>を使用して<span class="math inline">\(\widehat{\tau}_{2}\)</span>を推定することで、標準誤差の計算が容易になる。</li>
+</ul>
+<p><span class="math display">\[
+Y_{i t}=\alpha_{i}+\phi_{t}+\left(1[t=2] \cdot D_{i}\right) \beta+\epsilon_{i t} \qquad (3)
+\]</span></p>
+<ul>
+<li>個体固定効果<span class="math inline">\(\alpha_{i}\)</span></li>
+<li>時間固定効果<span class="math inline">\(\phi_{t}\)</span></li>
+<li>処置後の指標<span class="math inline">\(1[t=2]\)</span>と処置群<span class="math inline">\(D_{i}\)</span>との相互作用</li>
+<li>この標準的なDiD設定では、通常の最小二乗法（OLS）係数<span class="math inline">\(\hat{\beta}\)</span>が<span class="math inline">\(\hat{\tau}_{2}\)</span>と同等であることを簡単に示せる。</li>
+</ul>
+</section>
+<section id="処置の割り当てと時期に関する仮定の緩和" class="slide level2">
+<h2>3. 処置の割り当てと時期に関する仮定の緩和</h2>
+<ul>
+<li>最近のDiDの論文では、処置の割り当てとタイミングに関する基本的な仮定の緩和に焦点が当てられている。</li>
+<li>特に、2つ以上の期間があり、各個体が異なる時点で処置を受ける場合について大きな進展があった。
+<ul>
+<li>例えば、異なる州で異なる時点で特定の種類の法律が制定される。</li>
+</ul></li>
+</ul>
+</section>
+<section id="時差のある処置を考慮した一般化モデル" class="slide level2">
+<h2>3.1. 時差のある処置を考慮した一般化モデル</h2>
+<h3 id="仮定と表記法1処置のタイミング">仮定と表記法（1）処置のタイミング</h3>
+<ul>
+<li><span class="math inline">\(t=1, \ldots, T\)</span>で示される<span class="math inline">\(T\)</span>個の期間があり、各個体はどの期間でも関心のあるバイナリー処置を受けることができる。</li>
+<li>処置は永続的に続く状態であり、一度処置を受けた個体はパネルの残りの期間、処置を受け続ける。</li>
+<li>ここで、個体<span class="math inline">\(i\)</span>が期間<span class="math inline">\(t\)</span>に処置を受けたかどうかの指標を<span class="math inline">\(D_{i t}\)</span>とし、<span class="math inline">\(G_{i}=\min \left\{t: D_{i t}=1\right\}\)</span> は個体 <span class="math inline">\(i\)</span> が処置を受けた最も早い期間である。</li>
+<li>もし<span class="math inline">\(i\)</span>がサンプル期間中に一度も処置を受けなかった場合、<span class="math inline">\(G_{i}=\infty\)</span>となる。</li>
+<li>処置は永続的に続く状態であるため、すべての<span class="math inline">\(t \geqslant G_{i}\)</span> に対して<span class="math inline">\(D_{i t}=1\)</span>となる。処置に対する相対時間を<span class="math inline">\(R_{i t}=t-G_{i}+1\)</span> と定義し、個体<span class="math inline">\(i\)</span>の最初の処置期間では<span class="math inline">\(R_{i t}=1\)</span> となるようにする。</li>
+</ul>
+</section>
+<section id="仮定と表記法2潜在的な結果" class="slide level2">
+<h2>仮定と表記法（2）潜在的な結果</h2>
+<ul>
+<li>潜在的な結果の枠組みを多期間設定に拡張する。</li>
+<li>ここで、<span class="math inline">\(\mathbf{0}_{s}\)</span>と<span class="math inline">\(\mathbf{1}_{s}\)</span>は、それぞれ0と1の<span class="math inline">\(s\)</span>次元ベクトルを表すとする。</li>
+<li>個体<span class="math inline">\(i\)</span>が期間<span class="math inline">\(g\)</span>に初回処置を受けた場合の期間<span class="math inline">\(t\)</span>における潜在的な結果を<span class="math inline">\(Y_{i t}\left(\mathbf{0}_{g-1}, \mathbf{1}_{T-g+1}\right)\)</span>と表記する。</li>
+<li>“never-treated” の潜在的な結果を<span class="math inline">\(Y_{i t}\left(\mathbf{0}_{T}\right)\)</span> と表記する。</li>
+<li>我々は、処置がいったんオンになると 「そのまま」であると仮定しているので、 潜在的な結果の全経路は最初の処置時点 <span class="math inline">\((g)\)</span>によって要約される。したがって表記法を単純化するために、処置開始時期によって潜在的な結果をインデックス化することができる。
+<ul>
+<li><span class="math inline">\(Y_{i t}(g)=Y_{i t}\left(\mathbf{0}_{g-1}, \mathbf{1}_{T-g+1}\right)\)</span></li>
+<li><span class="math inline">\(Y_{i t}(\infty)=Y_{i t}\left(\mathbf{0}_{T}\right)\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="仮定4時差あり設定の平行傾向" class="slide level2">
+<h2>仮定4「時差あり設定の平行傾向」</h2>
+<ul>
+<li><p>平行傾向の仮定を時差あり設定に拡張する。</p></li>
+<li><p>2群2期間版の平行傾向を、期間のすべての組み合わせと異なる時期に処置された「群」（groups）のすべての組み合わせで成立することを要求するように拡張。</p></li>
+<li><p>仮定4（<strong>時差あり設定の平行傾向</strong>）。 全ての <span class="math inline">\(t \neq t^{\prime}\)</span> と <span class="math inline">\(g \neq g^{\prime}\)</span>について、 <span class="math display">\[
+\mathbb{E}\left[Y_{i t}(\infty)-Y_{i t^{\prime}}(\infty) \mid G_{i}=g\right]=\mathbb{E}\left[Y_{i t}(\infty)-Y_{i t^{\prime}}(\infty) \mid G_{i}=g^{\prime}\right] \quad (4)
+\]</span></p></li>
+<li><p>この仮定は、処置が行われなかった反実仮想では、すべての処置グループの結果が平行して進展していたことを意味している。</p></li>
+<li><p>(最終的にすべての個体が処置を受ける場合、処置される個体間でのみ平行傾向を課すと、ATTが識別できる期間の数は制限される。)</p></li>
+</ul>
+</section>
+<section id="仮定5時差ありの場合の予見効果なしの仮定" class="slide level2">
+<h2>仮定5「時差ありの場合の予見効果なしの仮定」</h2>
+<ul>
+<li><p>基本モデルの予見効果なしの仮定は、時差のある設定にも簡単に適用できる。</p></li>
+<li><p>直観的には、ある個体が期間 <span class="math inline">\(t\)</span>に未処置であれば、その結果は、将来どの期間に処置されるかに依存しないことを課すものである。</p></li>
+<li><p>仮定5 <strong>時差あり予見効果なしの仮定</strong> (Staggered no anticipation assumption)。</p></li>
+</ul>
+<p><span class="math display">\[
+    Y_{i t}(g)=Y_{i t}(\infty)   \text{ for all } t&lt;g
+\]</span></p>
+<ul>
+<li>意味：処置前の期間（<span class="math inline">\(t&lt;g\)</span>）の結果は、将来期間<span class="math inline">\(g\)</span>に処置が行われることに依存しない。</li>
+</ul>
+</section>
+<section id="twfeモデルの推定対象の解釈" class="slide level2">
+<h2>3.2. TWFEモデルの推定対象の解釈</h2>
+<h3 id="静学的twfe">静学的TWFE</h3>
+<ul>
+<li><p>まず、<strong>静学的TWFEの定式化</strong>（“static” TWFE specification）の議論から始める。これは、個体と期間の固定効果、および個体<span class="math inline">\(i\)</span>が期間<span class="math inline">\(t\)</span>で処置されたかどうかの指標<span class="math inline">\(D_{i t}\)</span>に結果変数<span class="math inline">\(Y_{i t}\)</span>を回帰させるものである。 <span class="math display">\[
+Y_{i t}=\alpha_{i}+\phi_{t}+D_{i t} \beta_{\text {post }}+\epsilon_{i t}  \quad (5)
+\]</span></p></li>
+<li><p>静学的定式化は、時間や個体によらず処置効果に不均質性がない場合に、賢明な推定対象（sensible estimand）をもたらす。</p></li>
+<li><p><strong>処置効果の不均一性</strong>が、<strong>処置後の時間または個体</strong>間のいずれにも存在する場合、静学的定式化に問題が発生する。</p></li>
+<li><p>例えば、個々の処置効果<span class="math inline">\(\tau_{s}\)</span>が全て正であっても、集計された処置効果の係数<span class="math inline">\(\beta_{\text {post }}\)</span>が負となる可能性（negative weights）がある。（<strong>負の重みの可能性</strong>）</p></li>
+</ul>
+</section>
+<section id="goodman-bacon-分解" class="slide level2">
+<h2><span class="citation" data-cites="goodman-bacon">Goodman-Bacon (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> 分解</h2>
+<ul>
+<li><span class="citation" data-cites="goodman-bacon">Goodman-Bacon (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> は、<span class="math inline">\(\widehat{\beta}_{\text {post }}\)</span>が、一方の個体が処置状態を変更し、他方が変更しなかった個体のペアと期間の間のDiD比較の凸加重平均（convex weighted average）として分解できることを示した。</li>
+<li>直感に反して、この分解により、より早い時期に処置を受けた個体を対照群(“control” group)として用いるDiDを含んでいることが分かった。</li>
+<li><strong>初期に処置された個体（early-treated unit）</strong>が、<strong>後に処置された多くの個体（later-treated units）</strong>の「対照群」として現れると、負のウェイトを受ける。</li>
+<li>この分解により、処置効果が個体や時間によって異なる場合、<span class="math inline">\(\beta_{\text {post }}\)</span>は<strong>「禁じられた比較」（</strong>forbidden comparisons<strong>）</strong>を含むため、賢明な推定対象（sensible estimand）ではない可能性があることがわかる。</li>
+</ul>
+</section>
+<section id="動学的twfe" class="slide level2">
+<h2>動学的TWFE</h2>
+<ul>
+<li><p>動学的TWFEでは、個体と期間の固定効果、および処置時点からの相対時間（time relative to treatment）のダミーに結果を回帰させる。 <span class="math display">\[
+Y_{i t}=
+\alpha_{i}
++\phi_{t}
++\sum_{\substack{r \neq 0 \\-\underline{T} \leqslant r \leqslant \bar{T}}} 1\left[R_{i t}=r\right] \beta_{r}
++\epsilon_{i t} \quad (7)
+\]</span></p></li>
+<li><p>ここで、<span class="math inline">\(R_{i, t}=t-G_{i}+1\)</span>であり、処置を受けてからの経過時間をあらわす。</p></li>
+<li><p>また、<span class="math inline">\(R_{i, t}=1\)</span>は処置を受けた最初の期間を示す。<br>
+</p></li>
+<li><p><strong>処置後の時間のみに異質性がある場合</strong>、賢明な因果推定対象（sensible causal estimand）を得ることができる。</p></li>
+<li><p><strong>コホート間の異質性</strong>がある場合、動学的定式化でも動的因果効果の賢明な推定値（sensible estimates of dynamic causal effects）を得ることができない。（この結果の導出は数学的に複雑）</p></li>
+</ul>
+</section>
+<section id="処置タイミングに時差がある場合のdid推定量" class="slide level2">
+<h2>3.3. 処置タイミングに時差がある場合のDiD推定量</h2>
+<h3 id="cs推定量-1-概要">CS推定量 (1) 概要</h3>
+<ul>
+<li><span class="citation" data-cites="callawayPedro2021">Callaway and Sant’Anna (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> のアプローチでは、時間<span class="math inline">\(g\)</span>に初めて処置されたコホートに対する時間<span class="math inline">\(t\)</span>における平均処置効果（group-time average treatment effect on the treated）、つまり、 <span class="math display">\[
+A T T(g, t)=\mathbb{E}\left[Y_{i t}(g)-Y_{i t}(\infty) \mid G_{i}=g\right]
+\]</span> を構築要素（building block）として考慮する。</li>
+<li>そして、仮定4やその変形のような平行傾向の仮定を一般化した下での識別と推定を検討する。</li>
+<li>直感的には、仮定4（平行傾向）と仮定5（予見効果なし）の下では、<span class="math inline">\(\operatorname{ATT}(g, t)\)</span> は、コホート<span class="math inline">\(g\)</span>の期間<span class="math inline">\(g-1\)</span>と<span class="math inline">\(t\)</span>の間の結果の期待変化とまだ処置を受けていない対照群のそれを比較することにより、識別することができる。</li>
+</ul>
+</section>
+<section id="cs推定量-2-att" class="slide level2">
+<h2>CS推定量 (2) ATT</h2>
+<ul>
+<li><p><span class="citation" data-cites="callawayPedro2021">Callaway and Sant’Anna (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> は、平行傾向の仮定が共変量の条件付きでのみ成立する一般化についても考察しているが、ここでは共変量がない場合に焦点を当てる。</p></li>
+<li><p>数学的には、任意の<span class="math inline">\(g^{\prime}&gt;t\)</span>（つまり、群<span class="math inline">\(g^{\prime}\)</span>は<span class="math inline">\(t\)</span>時点で未処置）について、以下を式(2)の識別結果の多期間版と見なすことができる。 <span class="math display">\[
+ATT(g, t)=
+\underbrace{\mathbb{E}\left[Y_{i t}-Y_{i, g-1} \mid G_{i}=g\right]}_{\text{既に処置済みの群の期待変化}}
+-\underbrace{\mathbb{E}\left[Y_{i t}-Y_{i, g-1} \mid G_{i}=g^{\prime}\right]}_{\text{未処置群の期待変化}}
+\]</span></p></li>
+<li><p>これは、<span class="math inline">\(g^{\prime}&gt;t\)</span> となるどの比較群でも成り立つので、すべての <span class="math inline">\(g^{\prime} \in \mathcal{G}_{\text {comp }}\)</span>について<span class="math inline">\(g^{\prime}&gt;t\)</span> となるような比較群の集合 <span class="math inline">\(\mathcal{G}_{\text {comp }}\)</span> を平均しても、成り立つ。 <span class="math display">\[
+A T T(g, t)=
+\underbrace{\mathbb{E}\left[Y_{i t}-Y_{i, g-1} \mid G_{i}=g\right]}_{\text{既に処置済みの群の期待変化}}
+-\underbrace{\mathbb{E}\left[Y_{i t}-Y_{i, g-1} \mid G_{i} \in \mathcal{G}_{\text {comp }}\right]}_{\text{未処置群の期待変化}}
+\]</span></p></li>
+</ul>
+</section>
+<section id="cs推定量-3-推定" class="slide level2">
+<h2>CS推定量 (3) 推定</h2>
+<ul>
+<li>期待値を標本平均に置き換えることで、<span class="math inline">\(A T T(g, t)\)</span>を推定できる。</li>
+</ul>
+<p><span class="math display">\[
+\widehat{A T T}(g, t)=
+\underbrace{\frac{1}{N_{g}} \sum_{i: G_{i}=g}\left[Y_{i, t}-Y_{i, g-1}\right]}_{\text{処置群の変化の平均}}
+-\underbrace{\frac{1}{N_{\mathcal{G}_{c o m p}}} \sum_{i: G_{i} \in \mathcal{G}_{\text {comp }}}\left[Y_{i, t}-Y_{i, g-1}\right]}_{\text{対照群の変化の平均}}
+\]</span></p>
+</section>
+<section id="cs推定量-4-比較群" class="slide level2">
+<h2>CS推定量 (4) 比較群</h2>
+<ul>
+<li><span class="citation" data-cites="callawayPedro2021">Callaway and Sant’Anna (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span> は、比較群<span class="math inline">\(\mathcal{G}_{\text {comp }}\)</span>について2つの選択肢を検討している。</li>
+</ul>
+<ol type="1">
+<li>一度も処置されることのない個体（never-treated units）だけを使う。つまり、<span class="math inline">\(\mathcal{G}_{\text {comp }}=\{\infty\}\)</span>。</li>
+<li>その時点で未処置の個体（not-yet-treated units）をすべて使用する。つまり、<span class="math inline">\(\mathcal{G}_{\text {comp }}=\left\{g^{\prime}: g^{\prime}&gt;t\right\}\)</span>。</li>
+</ol>
+</section>
+<section id="cs推定量-5-集計" class="slide level2">
+<h2>CS推定量 (5) 集計</h2>
+<ul>
+<li><p>期間と処置コホートの数が比較的少ない場合、関連するすべての<span class="math inline">\((g, t)\)</span>について<span class="math inline">\(\widehat{A T T}(g, t)\)</span>を報告することは合理的かもしれない。</p></li>
+<li><p>しかし、処置期間やコホートが多い場合、すべての<span class="math inline">\(\widehat{A T T}(g, t)\)</span>を報告することは煩雑である。</p></li>
+<li><p>幸い、<span class="math inline">\(ATT(g, t)\)</span>の任意の加重平均を推定することができる。</p></li>
+</ul>
+</section>
+<section id="cs推定量-6-集計att" class="slide level2">
+<h2>CS推定量 (6) 集計ATT</h2>
+<ul>
+<li><p>例えば、異なる採用（処置）コホート間の採用（処置）後<span class="math inline">\(l\)</span>期間の処置効果の（加重）平均を与える「イベント・スタディ・パラメータ」（``event-study” parameter）を推定することができる。 <span class="math display">\[
+A T T_{l}^{w}=\sum_{g} \color{blue}{w_{g}} A T T(g, g+l)
+\]</span></p></li>
+<li><p>ここで、<span class="math inline">\(\color{blue}{w_{g}}\)</span>は、コホート<span class="math inline">\(g\)</span>の重みを表す。</p></li>
+<li><p>重み <span class="math inline">\(\color{blue}{w_{g}}\)</span> は、異なるコホートを等しく重み付けするように選ぶことも、処置された集団における相対頻度の観点から選ぶこともできる。</p></li>
+</ul>
+</section>
+<section id="平行傾向の仮定の緩和" class="slide level2">
+<h2>4. 平行傾向の仮定の緩和</h2>
+<h3 id="仮定6条件付き平行傾向">仮定6「条件付き平行傾向」</h3>
+<ul>
+<li>基本モデルの平行傾向の仮定は次のように共変量（covariates）を組み込んだ形に拡張できる。</li>
+</ul>
+<p><strong>仮定6（条件付き平行傾向/Conditional Parallel Trends）</strong> <span class="math display">\[
+\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid D_{i}=1, X_{i}\right]=\mathbb{E}\left[Y_{i 2}(0)-Y_{i 1}(0) \mid D_{i}=0, X_{i}\right] \text { (almost surely)} \qquad (10)
+\]</span></p>
+<ul>
+<li>ここで、<span class="math inline">\(X_{i}\)</span> は、観測された共変量の処置前のベクトルである。</li>
+</ul>
+</section>
+<section id="仮定7重複条件の仮定" class="slide level2">
+<h2>仮定7「重複条件の仮定」</h2>
+<ul>
+<li>条件付き平行傾向の仮定に加えて、共変量<span class="math inline">\(X_{i}\)</span>を持つ各処置群個体に対して、<span class="math inline">\(X_{i}\)</span>の値が同じである未処置群個体が母集団中に少なくともいくつか存在することを保証する重複条件（overlap condition）、別名、正値条件（positivity condition）を課すことになる。</li>
+<li>この重複条件の仮定は、標準的な推論手法を用いる場合に特に重要である(Khan and Tamer, 2010)。</li>
+</ul>
+<p><strong>仮定7（強い重複/Strong overlap）</strong></p>
+<ul>
+<li>観測された特性が与えられたとき、処置群に属する条件付き確率は、1から離れるように一様に束縛され、処置される個体の割合は0から離れるように束縛される。</li>
+<li>つまり、ある <span class="math inline">\(\epsilon&gt;0\)</span> について、 <span class="math display">\[
+P\left(D_{i}=1 \mid X_{i}\right)&lt; 1-\epsilon, \text{ almost surely, and } \mathbb{E}[D]&gt;0.
+\]</span></li>
+</ul>
+</section>
+<section id="共変量で条件づけたatt" class="slide level2">
+<h2>共変量で条件づけたATT</h2>
+<ul>
+<li>条件付き平行傾向の仮定、予見効果なしの仮定、重複条件の仮定のもとで、共変量<span class="math inline">\(X_{i}=x\)</span>を条件としたATTは、次のように表される。</li>
+</ul>
+<p><span class="math display">\[
+\tau_{2}(x)=\mathbb{E}\left[Y_{i 2}(1)-Y_{i 2}(0) \mid D_{i}=1, X_{i}=x\right]
+\]</span> このATTは、<span class="math inline">\(P\left(D_{i}=1 \mid X_{i}=x\right)&gt;0\)</span>の任意の<span class="math inline">\(x\)</span>について識別される。</p>
+<ul>
+<li>特に、条件付き平行傾向の仮定が成立する場合、ATTは次のように表される。 <span class="math display">\[
+  \tau_{2}(x)=\underbrace{\mathbb{E}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=1, X_{i}=x\right]}_{\text {Change for } D_{i}=1, X_{i}=x}-\underbrace{\mathbb{E}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=0, X_{i}=x\right]}_{\text {Change for } D_{i}=0, X_{i}=x} . \qquad (11)
+\]</span></li>
+</ul>
+</section>
+<section id="二重頑健推定量-1" class="slide level2">
+<h2>二重頑健推定量 （1）</h2>
+<ul>
+<li>上記のアウトカム回帰とIPWのアプローチは、結果モデルと傾向スコアモデルのどちらかが正しく定式化されていれば有効な「二重頑健」法（“doubly-robust” (DR) methods）を形成するために組み合わせることも可能である。</li>
+<li>具体的には、Sant’Anna and Zhao (2020)は、仮定2、6、7の下で、二重頑健推定量（Doubly-robust estimators）を用いて、ATTが以下のように識別されることを示している。</li>
+</ul>
+<p><span class="math display">\[
+\tau_{2}=
+\mathbb{E}\left[
+\underbrace{
+\left(\frac{D_{i}}{\mathbb{E}\left[D_{i}\right]}
+-\frac{\frac{\left(1-D_{i}\right) \color{blue}{p(X_{i})}}{\color{blue}{1-p\left(X_{i}\right)}}}
+{\mathbb{E}\left[\frac{\left(1-D_{i}\right) \color{blue}{p\left(X_{i}\right)}}{\color{blue}{1-p\left(X_{i}\right)}}\right]}\right)}_{\text{逆確率重み付け}\\\text{inverse probability weighting}}
+\left(Y_{i, 2}-Y_{i, 1}
+-
+\underbrace{\mathbb{E}\left[Y_{i, 2}-Y_{i, 1} \mid D_{i}=0, X_{i}\right]}_{\text{比較群の期待変化}\\
+\text{population outcome regression}}\right)\right] \qquad (15)
+\]</span></p>
+</section>
+<section id="二重頑健推定量-2" class="slide level2">
+<h2>二重頑健推定量 （2）</h2>
+<ul>
+<li>前回と同様に、傾向スコアとCEF（conditional expectation function）の両方の推定値（estimates）を代入することでATTを推定することができる。</li>
+</ul>
+<p><span class="math display">\[
+\widehat{\tau}_{2}=\frac{1}{N} \sum_{i=1}^{N}\left(\frac{D_{i}}{\frac{1}{N} \sum_{j=1}^{N} D_{j}}-\frac{\frac{\left(1-D_{i}\right) \color{blue}{\widehat{p}(X_{i})}}{\color{blue}{1-\widehat{p}(X_{i})}}}{\frac{1}{N} \sum_{j=1}^{N} \frac{\left(1-D_{j}\right) \color{blue}{\hat{p}(X_{j})}}{\color{blue}{1-\widehat{p}(X_{j})}}}\right)\left(Y_{i 2}-Y_{i 1}-\widehat{\mathbb{E}}\left[Y_{i 2}-Y_{i 1} \mid D_{i}=0, X_{i}\right]\right)
+\]</span></p>
+<ul>
+<li>結果式（outcome equation）と傾向スコアは、パラメトリック法、セミ／ノンパラメトリック法のいずれでもモデル化でき、これらのモデルのいずれかが正しく定式化されていれば、DR法は一般に一致性（consistent）が保たれる。</li>
+</ul>
+</section>
+<section id="結論" class="slide level2">
+<h2>7. 結論</h2>
+<ul>
+<li>本論文の主要な結論は、以下の通りである</li>
+</ul>
+<ol type="1">
+<li>研究者は識別に用いる比較グループを明確にすること</li>
+<li>推定・推論方法を識別の仮定に合わせること</li>
+<li>仮定に違反する可能性に対して頑健性を探ること</li>
+</ol>
+<ul>
+<li>また、正しい識別仮定やそれに付随する方法を選択するためには、<strong>文脈に応じた知識（context-specific knowledge）</strong>が必要となる。</li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<!--
+Baker, Andrew C., David F. Larcker, and Charles C. Y. Wang. 2022. Journal of Financial Economics 144 (2): 370–95. https://doi.org/10.1093/ectj/utac017.
+Borusyak, Kirill, Xavier Jaravel, and Jann Spiess. 2024. “Revisiting Event-Study Designs: Robust and Efficient Estimation.” Review of Economic Studies, rdae007. https://doi.org/10.1093/restud/rdae007.
+Callaway, Brantly, Andrew Goodman-Bacon, and Pedro HC Sant’Anna. 2021. “Difference-in-Differences with a Continuous Treatment.” arXiv Preprint arXiv:2107.02637. https://doi.org/10.48550/arXiv.2107.02637.
+Callaway, Brantly, and Pedro H. C. Sant’Anna. 2021. “Difference-in-Differences with Multiple Time Periods.” Journal of Econometrics 225 (2): 200–230. https://doi.org/10.1016/j.jeconom.2020.12.001.
+Cengiz, Doruk, Arindrajit Dube, Attila Lindner, and Ben Zipperer. 2019. “The Effect of Minimum Wages on Low-Wage Jobs.” The Quarterly Journal of Economics 134 (3): 1405–54. https://doi.org/10.1093/qje/qjz014.
+de Chaisemartin, Clement, and Xavier D’haultfœuille. 2023. “Two-Way Fixed Effects and Differences-in-Differences Estimators with Several Treatments.” Journal of Econometrics 236 (2): 105480. https://doi.org/10.1016/j.jeconom.2023.105480.
+de Chaisemartin, Clément, and Xavier d’Haultfoeuille. 2020. “Two-Way Fixed Effects Estimators with Heterogeneous Treatment Effects.” American Economic Review 110 (9): 2964–96. https://doi.org/10.1257/aer.20181169.
+———. 2023. “Two-Way Fixed Effects and Differences-in-Differences with Heterogeneous Treatment Effects: A Survey.” The Econometrics Journal 26 (3): C1–30.
+de Chaisemartin, Clément, and Xavier D’HaultfŒuille. 2018. “Fuzzy Differences-in-Differences.” The Review of Economic Studies 85 (2): 999–1028. https://doi.org/10.1093/restud/rdx049.
+de Chaisemartin, Clément, Xavier D’Haultfœuille, and Yannick Guyonvarch. 2019. “Fuzzy Differences-in-Differences with Stata.” The Stata Journal: Promoting Communications on Statistics and Stata 19 (2): 435–58. https://doi.org/10.1177/1536867X19854019.
+Freyaldenhoven, Simon, Christian Hansen, Jorge Pérez Pérez, and Jesse M Shapiro. 2021. “Visualization, Identification, and Estimation in the Linear Panel Event-Study Design.” Advances in Economics and Econometrics - Twelfth World Congress.
+Freyaldenhoven, Simon, Christian Hansen, and Jesse M. Shapiro. 2019. “Pre-Event Trends in the Panel Event-Study Design.” American Economic Review 109 (9): 3307–38. https://doi.org/10.1257/aer.20180609.
+Gardner, John. 2022. “Two-Stage Differences in Differences.” arXiv Preprint arXiv:2207.05943.
+Goodman-Bacon, Andrew. 2021. “Difference-in-Differences with Variation in Treatment Timing.” Journal of Econometrics 225 (2): 254–77. https://doi.org/10.1016/j.jeconom.2021.03.014.
+Imai, Kosuke, and In Song Kim. 2021. “On the Use of Two-Way Fixed Effects Regression Models for Causal Inference with Panel Data.” Political Analysis 29 (3): 405–15.
+Jakiela, Pamela. 2021. “Simple Diagnostics for Two-Way Fixed Effects.” arXiv Preprint arXiv:2103.13229. https://doi.org/10.48550/arXiv.2103.13229.
+Liu, Licheng, Ye Wang, and Yiqing Xu. 2024. “A Practical Guide to Counterfactual Estimators for Causal Inference with Time-Series Cross-Sectional Data.” American Journal of Political Science 68 (1): 160–76.
+Marcus, Michelle, and Pedro HC Sant’Anna. 2021. “The Role of Parallel Trends in Event Study Settings: An Application to Environmental Economics.” Journal of the Association of Environmental and Resource Economists 8 (2): 235–75. https://doi.org/https://doi.org/10.1086/711509.
+Roth, Jonathan, and Pedro HC Sant’Anna. 2023. “When Is Parallel Trends Sensitive to Functional Form?” Econometrica 91 (2): 737–47. https://doi.org/https://doi.org/10.3982/ECTA19402.
+Roth, Jonathan, Pedro HC Sant’Anna, Alyssa Bilinski, and John Poe. 2023. “What’s Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature.” Journal of Econometrics 235 (2): 2218–44. https://doi.org/10.1016/j.jeconom.2023.03.008.
+Sun, Liyang, and Sarah Abraham. 2021. “Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects.” Journal of Econometrics 225 (2): 175–99. https://doi.org/10.1016/j.jeconom.2020.09.006.
+Wooldridge, Jeffrey M. 2021. “Two-Way Fixed Effects, the Two-Way Mundlak Regression, and Difference-in-Differences Estimators.” Available at SSRN 3906345.
+Ye, Ting, Luke Keele, Raiden Hasegawa, and Dylan S Small. 2023. “A Negative Correlation Strategy for Bracketing in Difference-in-Differences.” Journal of the American Statistical Association, 1–13. https://doi.org/10.1080/01621459.2023.2252576.
+-->
+<div style="font-size: 70%">
+
+</div>
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
+
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-callawayPedro2021" class="csl-entry" role="listitem">
+Callaway, Brantly, and Pedro H. C. Sant’Anna. 2021. <span>“Difference-in-<span>Differences</span> with Multiple Time Periods.”</span> <em>Journal of Econometrics</em> 225 (2): 200–230. <a href="https://doi.org/10.1016/j.jeconom.2020.12.001">https://doi.org/10.1016/j.jeconom.2020.12.001</a>.
+</div>
+<div id="ref-goodman-bacon" class="csl-entry" role="listitem">
+Goodman-Bacon, Andrew. 2021. <span>“Difference-in-Differences with Variation in Treatment Timing.”</span> <em>Journal of Econometrics</em> 225 (2): 254–77. <a href="https://doi.org/10.1016/j.jeconom.2021.03.014">https://doi.org/10.1016/j.jeconom.2021.03.014</a>.
+</div>
+<div id="ref-roth2023s" class="csl-entry" role="listitem">
+Roth, Jonathan, Pedro HC Sant’Anna, Alyssa Bilinski, and John Poe. 2023. <span>“What’s Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature.”</span> <em>Journal of Econometrics</em> 235 (2): 2218–44. <a href="https://doi.org/10.1016/j.jeconom.2023.03.008">https://doi.org/10.1016/j.jeconom.2023.03.008</a>.
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="DiD_notes02_Roth2023survey_short_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true,"src":"chalkboard1.json"},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
