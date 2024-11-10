@@ -10,7 +10,7 @@
 
 - 会場：日本大学経済学部（水道橋）ハイブリッド方式で開催
 - 言語：日本語
-- 詳細：[関東支部HP](https://www.jsie.jp/kanto/news/915/) | [GitHub Pages](https://ayumu-tanaka.github.io/DiD-JSIE/)
+- 詳細：[関東支部HP](https://www.jsie.jp/kanto/news/915/)、[GitHub Pages](https://ayumu-tanaka.github.io/DiD-JSIE/)
 
    
 ## 講義概要
@@ -67,4 +67,4 @@
   - Stata版
   [[RPubs]](https://rpubs.com/ayumuR/DiD-Stata-Wage) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Stata-Wage.html) 
 
-**注**：サーバー負荷軽減のため、RPubs/HTML両方のリンクを掲載しています。
+**注**：サーバー負荷分散のため、RPubs/HTML両方のリンクを掲載しています。
