@@ -2,9 +2,6 @@
 
 ## 日本国際経済学会関東支部チュートリアルセッション
 
-
-現時点での計画は以下の通りです。
-
 日時：11月16日（土）
 
 - 午後2時00分から午後3時15分：解説
@@ -13,7 +10,7 @@
 
 - 会場：日本大学経済学部（水道橋）ハイブリッド方式で開催
 - 言語：日本語
-- 詳細：[関東支部HP](https://www.jsie.jp/kanto/news/915/)
+- 詳細：[関東支部HP](https://www.jsie.jp/kanto/news/915/) | [GitHub Pages](https://ayumu-tanaka.github.io/DiD-JSIE/)
 
    
 ## 講義概要
@@ -42,7 +39,10 @@
 
 ### スライド（75分）
 
-- [DiDの展開](https://rpubs.com/ayumuR/Roth2023survey_short) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.html) / [[PDF]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.pdf)
+- DiDの展開 
+[[RPubs]](https://rpubs.com/ayumuR/Roth2023survey_short) 
+ [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.html) 
+ [[PDF]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD_notes02_Roth2023survey_short.pdf)
 
 <!--
   - [Pedro Sant'Anna氏による解説動画](https://youtu.be/Jyat3OZLyRc?si=RXkz6Ma0POrOeu6w)
@@ -51,11 +51,20 @@
 ### Rコード（75分）
 
 
-- [重力方程式を用いた2元固定効果差の差推定](https://rpubs.com/ayumuR/gravity_fixest_twfe) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/05_gravity_fixest_twfe.html)
+- 重力方程式を用いた2元固定効果差の差推定
+[[RPubs]](https://rpubs.com/ayumuR/gravity_fixest_twfe) 
+[[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/05_gravity_fixest_twfe.html)
 
-- [重力方程式を用いた多期間差の差推定](https://rpubs.com/ayumuR/gravity_fixest_es) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/06_gravity_fixest_es.html)
+- 重力方程式を用いた多期間差の差推定
+[[RPubs]](https://rpubs.com/ayumuR/gravity_fixest_es) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/06_gravity_fixest_es.html)
 
 <!--  重力方程式を用いた時差あり差の差推定 -->
 
-- 最低賃金の若年雇用への影響: [R版](https://rpubs.com/ayumuR/DiD-Wage) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Wage.html) / [Stata版](https://rpubs.com/ayumuR/DiD-Stata-Wage) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Stata-Wage.html) 
+- 最低賃金の若年雇用への影響: 
+  - R版
+  [[RPubs]](https://rpubs.com/ayumuR/DiD-Wage)
+  [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Wage.html) 
+  - Stata版
+  [[RPubs]](https://rpubs.com/ayumuR/DiD-Stata-Wage) [[HTML]](https://ayumu-tanaka.github.io/DiD-JSIE/DiD-Stata-Wage.html) 
 
+**注**：サーバー負荷軽減のため、RPubs/HTML両方のリンクを掲載しています。
