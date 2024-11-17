@@ -1733,7 +1733,7 @@ border-radius: 0px;
 </div>
 
 
-<p>This version: 2024-11-09</p>
+<p>This version: 2024-11-17</p>
 <div id="はじめに" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> はじめに</h1>
 <p>本ページでは、政策が２国間の貿易額に与える影響を分析するため、2期間２グループの「2
@@ -2017,10 +2017,24 @@ text(1, 10.1+0.5, &quot;10.1&quot;) # 制御群のafterの平均値</code></pre>
 <div id="結果の比較" class="section level1" number="6">
 <h1><span class="header-section-number">6</span> 結果の比較</h1>
 <ul>
-<li><code>modelsummary</code>を使って、推定結果の比較を行う。</li>
-<li><code>coef_rename</code>で係数の表示名を統一化している。</li>
-<li>そのうえで、<code>kableExtra</code>パッケージを使って、表の見出しや脚注を追加し、表の見栄えを整えている。</li>
+<li><p><code>modelsummary</code>を使って、推定結果の比較を行う。</p></li>
+<li><p><code>coef_rename</code>で係数の表示名を統一化している。</p></li>
+<li><p>そのうえで、<code>kableExtra</code>パッケージを使って、表の見出しや脚注を追加し、表の見栄えを整えている。</p></li>
+<li><p>パッケージのインストールは以下のコードで行える。バージョンによって、<code>modelsummary</code>や<code>kableExtra</code>の機能が異なるため、バージョンを指定してインストールする。</p></li>
 </ul>
+<pre><code># 古いパッケージのインストールのため
+install.packages(&quot;remotes&quot;)
+
+# modelsummaryパッケージをインストールする。
+remotes::install_version(package = &quot;modelsummary&quot;, version = &quot;1.4.3&quot;, 
+                         dependencies = FALSE,
+                         repos = &quot;http://cran.us.r-project.org&quot;)
+
+# LaTexへの表の出力のために、kableExtraパッケージをインストールする。
+#install.packages(&quot;kableExtra&quot;)
+remotes::install_version(package = &quot;kableExtra&quot;, version = &quot;1.4.0&quot;, 
+                         dependencies = FALSE,
+                         repos = &quot;http://cran.us.r-project.org&quot;)</code></pre>
 <pre class="r"><code>library(modelsummary)
 library(kableExtra)
 
